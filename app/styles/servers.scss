@@ -1,0 +1,74 @@
+		html,body{
+			height: 100%;
+			overflow: hidden;
+			
+		}
+        /*.sections,.section都要设置相对定位，$('').postion()才能正确计算*/
+		#container,.sections,.section{
+			position: relative;
+		    height: 100%;
+			
+
+		}
+		.section{
+
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+			text-align: center;
+			color: white;
+		}
+		#section0{
+			background-image: url(images/1.jpg);
+		}
+		#section1{
+			background-image: url(images/2.jpg);
+		}
+		#section2{
+			background-image: url(images/3.jpg);
+		}
+		#section3{
+			background-image: url(images/4.jpg);
+		}	
+
+		/*分页的css*/
+        .pages {
+           position: fixed;       	
+        }
+
+		.pages li {
+			margin-bottom: 4px;
+			width: 10px;
+			height: 10px;
+			list-style:none;
+			border-radius: 50%;
+			background-color: #fff;
+			cursor: pointer;
+		}	
+		.pages .active{
+			width :13px;
+			height: 13px;
+			background-color: #757474;
+		}
+		/*纵向显示分页css*/
+		.vertical{
+          top: 50%;
+          right: 20px;
+          transform: translateY(-50%);
+		}
+		.vertical .active{
+			margin-left: -1px;
+			}
+        /*横向显示分页css*/
+        .horizontal {
+        	left: 50%;
+        	bottom: 20px;
+        	transform: translateX(-50%);
+        }
+		.horizontal li{
+			float: left;
+			margin-left: 4px;
+		}
+		.horizontal .active{
+			margin-top: -1px;
+		}

@@ -1,0 +1,101 @@
+*{
+	margin:0;
+	padding:0;
+}
+nav{
+	padding-left:10%;
+	height:50px;
+	background-color: #032951;
+	color:#fff;
+}
+nav>ul{
+	height: 50px;
+	
+}
+nav a{
+	text-decoration: none;
+	text-align: center;
+	color:#fff;
+}
+nav>ul>li{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+}
+nav>ul>li>a:hover{
+	text-decoration: underline;	
+}
+nav .caselist{
+	position: relative;
+	width: 200px;
+}
+nav .caselist:hover #caselist{
+	display: block;
+}
+#caselist{
+	height: 30px;
+	line-height: 30px;	
+	margin-left:2px;
+	position: absolute;
+	top:50;
+	left:0;	
+    font-size:0.8rem;
+	display: none;
+}
+#caselist li{
+	background-color: #fff;
+	border-bottom:1px solid #ddd;
+	width: 120px;	
+}
+#caselist a{
+	margin-left: 5px;
+	color:#888686;
+}
+nav ul>li ul a:hover{
+	text-decoration: underline;
+}
+
+ul{
+	list-style: none;
+}
+
+
+.cases .case-intro{
+   width:80%;
+   margin:20px auto;
+}
+
+.cases .case-intro >div{
+	display: inline-block;
+	padding-left: 50px;
+	width: 50%;
+	vertical-align: top;
+}
+
+.cases .case-intro >div h3{
+	font-size:1rem;
+	margin-bottom: 10px;
+	color:#504F4F;
+}
+.cases .case-intro >div p a{
+	color: #888686;	
+	text-decoration: none;
+}
+.cases .case-intro >div p a:hover{
+	text-decoration: underline;
+}
+.cases .case-intro >div p{
+	font-size:0.8rem;
+	margin-bottom: 10px;	
+	color: #888686;
+}
+.case-img-large{
+	margin-top: 50px;
+	width:50%;
+	margin:0 auto;
+}
+
+.case-img-large img{
+	width: 100%;
+}

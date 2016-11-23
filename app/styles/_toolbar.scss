@@ -1,0 +1,126 @@
+
+/*toolbar*/
+@import "mixin";
+
+@mixin toolbar-btn($icon,$icontext){
+	.toolbar-btn{
+    	&:before{
+    		content:$icon;
+    	};
+    }
+    .toolbar-btn{
+    	&:after{
+    		content:$icontext;
+    	};
+    }
+}
+$toolbar-size:52px;
+.toolbar{
+   position: fixed;
+   right: 0px;
+   bottom: 5px;
+   margin-left: -$toolbar-size / 2;	
+}
+.toolbar-item,.toolbar-btn,.toolbar-btn:before,.toolbar-btn:after{
+	width: $toolbar-size;
+	height: $toolbar-size;
+}
+.toolbar-btn:before,.toolbar-btn:after{
+	    position: absolute;
+	 	left: 0;
+		color: #fff;
+		text-align: center;     
+@include transition(top 1s);
+}
+.toolbar-item{
+	position: relative;
+	display: block;
+	margin-top: 1px;
+    &:hover{
+    	.toolbar-btn{
+    		&:before{
+    			top:-$toolbar-size;
+    		};
+    		&:after{
+    			top:0;
+    		};
+    	}
+    	&:after{
+ 	        @include opacity(1);
+	        @include scale(0,1);   			
+    	};
+
+    };
+	&:after{
+        content:"";
+	    position: absolute;
+	    right: $toolbar-size - 7;
+	    bottom: -10px;
+	    width: 172px;
+	    background-image: url(../images/QRcode.png);
+	    background-repeat: no-repeat;
+	    @include opacity(0);
+	    @include transform-origin(95% 95%);
+	    @include scale(0,0.01);
+	    @include transition(all 1s); 
+	};	
+}
+.toolbar-item-wechat{
+    &:after{
+    	content:"";
+	 	height: 212px;
+	    background-position: 0 0;   	
+    };
+    @include toolbar-btn("\e901","公众\A账号");
+}
+.toolbar-item-feedback{
+	@include toolbar-btn("\e900","意见\A反馈");
+}
+.toolbar-btn{
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    &:before{ //icon
+    	top: 0;
+		background-color: #d0d6d9;
+		font-size: 30px;
+		line-height: $toolbar-size; 
+
+    };	
+    &:after{ //text
+    	content: "";
+	    padding-top: 12px;
+		top: $toolbar-size;
+		background-color: #98a1a6;
+		font-size: 12px;
+		font-family: "Microsoft YaHei";
+		line-height: 1.2; 
+		white-space:pre;
+    };
+
+}
+.toolbar-item-app{
+    &:after{
+    	content:"";
+    	height: 194px;
+        background-position: 0 -222px;
+    };
+    @include toolbar-btn("\e958","APP\A下载");
+}
+.toolbar-item-top{
+	@include toolbar-btn("\ea3a","返回\A顶部");
+}
