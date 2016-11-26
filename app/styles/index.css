@@ -124,7 +124,7 @@ nav.top-nav {
     height: 5em; }
     nav.top-nav .logo {
       height: 5em;
-      margin: 0.5em 2em; }
+      margin: 0.5em 5em 2em; }
     nav.top-nav li {
       height: 3em;
       line-height: 3em;
@@ -166,7 +166,7 @@ nav.top-nav {
     height: 4em; }
     nav.top-nav .logo {
       height: 4em;
-      margin: 0.5em 2em; }
+      margin: 0.5em 5em 2em; }
     nav.top-nav li {
       height: 2.4em;
       line-height: 2.4em;
@@ -208,7 +208,7 @@ nav.top-nav {
     height: 2.5em; }
     nav.top-nav .logo {
       height: 2.5em;
-      margin: 0.35em 2em; }
+      margin: 0.35em 5em 2em; }
     nav.top-nav li {
       height: 1.5em;
       line-height: 1.5em;
@@ -250,7 +250,7 @@ nav.top-nav {
     height: 2em; }
     nav.top-nav .logo {
       height: 2em;
-      margin: 0.1em 2em; }
+      margin: 0.1em 5em 2em; }
     nav.top-nav li {
       height: 1.2em;
       line-height: 1.2em;
