@@ -35,10 +35,10 @@
   position: absolute;*/
   width: 100%;
 }
-
+/*
 .m-slider .slide h2{
   margin-top: 40%;
-}
+}*/
 
 /*
 .m-slider .slide{
@@ -67,18 +67,17 @@
   padding-left: 0;
 }
 .m-cursor>div{
-  width: 25%
-  height: 100px;
   color: #aaa;
   background-color: #fff;
   background-clip: content-box;
   /*line-height: 20px;*/
-  border-radius: 50px 50px 50px 50px;
   /*display: inline-block;*/
   cursor: pointer;
   transition: background-color .5s;
 
 }
+
+
 /*.m-cursor>div.z-active,.m-cursor>div:hover{
   background-color: #8AABCA;
   color:#fff;
@@ -93,11 +92,11 @@
 .prev,.next{
   position: absolute;
   z-index: 10;
-  width: 40px;
-  height: 40px;
-  font-size: 25px;
+  width: 2em;
+  height: 2em;
+  font-size: 2em;
   color: #aaa;
-  line-height: 40px;
+  line-height: 2em;
   border-radius: 50%;
   border: 2px solid #999;
   margin-bottom: 4px;
@@ -111,14 +110,14 @@
 }
 
 .prev{
-  left: 20px;
+  left: 1.5em;
   top:50%;
-  margin-top:-20px;
+  margin-top:-0.5em;
 }
 
 .next{
-  right: 20px;
+  right: 1.5em;
   top: 50%;
-  margin-top:-20px;
+  margin-top:-0.5em;
 }
 

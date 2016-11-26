@@ -1,0 +1,413 @@
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b {
+  font-weight: normal; }
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/ }
+
+html {
+  font-size: 16px;
+  font-family: "微软雅黑";
+  width: 100%;
+  height: 100%; }
+
+body {
+  min-width: 333px;
+  height: 100%; }
+
+/*$*/
+/*color*/
+@media screen and (min-width: 768px) {
+  nav.top-nav {
+    height: 100px; }
+    nav.top-nav li a {
+      height: 100px;
+     
+      line-height: 100px;
+      font-size: 1.2rem; }
+    nav.top-nav .logo {
+      width: 80px;
+      height: 80px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: 80px 80px; }
+
+  .banner, .seat {
+    margin-top: 110px; }
+
+  .about-content {
+    margin-top: 110px; } }
+@media screen and (max-width: 768px) and (min-width: 600px) {
+  nav.top-nav {
+    height: 80px; }
+    nav.top-nav li a {
+      height: 80px;
+      line-height: 80px;
+      font-size: 1rem; }
+    nav.top-nav .logo {
+      width: 64px;
+      height: 64px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: 64px 64px; }
+
+  .banner, .seat {
+    margin-top: 90px; }
+
+  .about-content {
+    margin-top: 90px; } }
+@media screen and (max-width: 600px) and (min-width: 320px) {
+  nav.top-nav {
+    height: 50px; }
+    nav.top-nav li a {
+      height: 50px;
+      line-height: 50px;
+      font-size: 0.8rem; }
+    nav.top-nav .logo {
+      width: 40px;
+      height: 40px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: 40px 40px; }
+
+  .banner, .seat {
+    margin-top: 60px; }
+
+  .about-content {
+    margin-top: 60px; } }
+@media screen and (max-width: 320) {
+  nav.top-nav {
+    height: 50px; }
+    nav.top-nav li a {
+      height: 50px;
+      line-height: 50px;
+      font-size: 0.6rem; }
+    nav.top-nav .logo {
+      width: 40px;
+      height: 40px;
+      background: url(../images/logo.png) no-repeat;
+      background-size: 40px 40px; }
+
+  .banner, .seat {
+    margin-top: 60px; }
+
+  .about-content {
+    margin-top: 60px; } }
+nav.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 100; }
+  nav.top-nav li {
+    float: left;
+    width: 10%;
+    color: #fff; }
+    nav.top-nav li:nth-child(1) {
+      border-left: 1px solid #ddd; }
+    nav.top-nav li a {
+      display: inline-block;
+      text-align: center;
+      width: 100%;
+      border-right: 1px solid #fff;
+      color: #ddd; }
+      nav.top-nav li a:hover {
+        background-color: #4D4F7B; }
+  nav.top-nav .logo {
+    float: left;
+    margin: 10px 10% 10px 15%; }
+
+#banner {
+  width: 100%; }
+  #banner img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    /*box-shadow: 0 0 0 10px #C1BFBF;*/ }
+
+/*为坐响应式，添加的一个展位元素，标签相对定位的父元素*/
+.seat {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0; }
+  .seat .intro-content, .seat #intro5 {
+    margin-left: -20px; }
+    .seat .intro-content > .float, .seat #intro5 > .float {
+      float: left;
+      width: 20%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      .seat .intro-content > .float .layout, .seat #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  .seat img {
+    visibility: hidden; }
+  .seat .intro-content .float, .seat #intro5 .float {
+    height: 180px; }
+    .seat .intro-content .float .layout, .seat #intro5 .float .layout {
+      margin-top: 20px; }
+  .seat h3, .seat p {
+    margin-left: 40px;
+    text-align: left; }
+  .seat h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #717171; }
+  .seat p {
+    font-size: 14px; }
+    .seat p a {
+      color: #aaa; }
+    .seat p a:hover {
+      color: #1ac472;
+      text-decoration: underline; }
+
+.centent {
+  margin-top: 150px; }
+
+.section {
+  margin: 10px auto;
+  width: 80%; }
+
+#intro1 {
+  margin: 10px auto;
+  width: 80%;
+  background-color: #ebe9e9; }
+  #intro1 h2 {
+    margin: 0 auto;
+    line-height: 1.8em;
+    height: 1.8em;
+    text-align: center;
+    font-size: 1.8rem; }
+  #intro1 .intro-content, #intro1 #intro5 {
+    margin-left: -20px; }
+    #intro1 .intro-content > .float, #intro1 #intro5 > .float {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #intro1 .intro-content > .float .layout, #intro1 #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  #intro1 .intro-content .intro1-img, #intro1 #intro5 .intro1-img {
+    position: relative;
+    height: 8rem;
+    /*根据字体宽度设置容器高度*/
+    width: 100%;
+    background: url(../images/intro1-icon.png) no-repeat;
+    background-size: 500% 100%;
+    /*根据htmlfont-size和bgsize大小计算而得*/ }
+    #intro1 .intro-content .intro1-img:hover .layer, #intro1 #intro5 .intro1-img:hover .layer {
+      height: 80%; }
+  #intro1 .intro-content .img-bg, #intro1 #intro5 .img-bg {
+    background-position: -0.3% 0; }
+  #intro1 .intro-content .img-exp, #intro1 #intro5 .img-exp {
+    background-position: 25% 0; }
+  #intro1 .intro-content .img-res, #intro1 #intro5 .img-res {
+    background-position: 50% 0; }
+  #intro1 .intro-content .img-mind, #intro1 #intro5 .img-mind {
+    background-position: 75% 0; }
+  #intro1 .intro-content h3, #intro1 #intro5 h3 {
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem; }
+  #intro1 .intro-content p, #intro1 #intro5 p {
+    font-size: 1rem;
+    padding: 10% 10%;
+    vertical-align: middle;
+    z-index: 200; }
+  #intro1 .intro-content .layer, #intro1 #intro5 .layer {
+    position: absolute;
+    bottom: 0;
+    background-color: #828282;
+    width: 100%;
+    height: 0%;
+    z-index: 10;
+    -webkit-transition: height 500ms;
+    -moz-transition: height 500ms;
+    -ms-transition: height 500ms;
+    -o-transition: height 500ms;
+    transition: height 500ms; }
+
+#intro2 {
+  margin: 10px auto;
+  width: 80%;
+  background-color: #F8FCD8;
+  background-size: cover; }
+  #intro2 h2 {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    background-color: #1ac472;
+    text-align: center;
+    line-height: 50px; }
+  #intro2 .intro-content, #intro2 #intro5 {
+    margin-left: -20px; }
+    #intro2 .intro-content > .float, #intro2 #intro5 > .float {
+      float: left;
+      width: 33.33%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #intro2 .intro-content > .float .layout, #intro2 #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  #intro2 .intro-content .intro2-img, #intro2 #intro5 .intro2-img {
+    width: 130px;
+    height: 80px;
+    background: url(../images/intro2-icon2.png) no-repeat; }
+  #intro2 .intro-content h3, #intro2 #intro5 h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #1ac472; }
+  #intro2 .intro-content p, #intro2 #intro5 p {
+    text-align: center; }
+  #intro2 .img-com {
+    background-position: 0 0; }
+  #intro2 .img-wechat {
+    background-position: 0 -90px; }
+  #intro2 .img-maintain {
+    background-position: 0 -180px; }
+
+#intro3 {
+  margin: 10px auto;
+  width: 80%;
+  background-color: #F8FCD8;
+  background-size: cover; }
+  #intro3 h2, #intro3 > p {
+    margin: 0 auto;
+    text-align: center; }
+  #intro3 .intro-content, #intro3 #intro5 {
+    margin-left: -20px; }
+    #intro3 .intro-content > .float, #intro3 #intro5 > .float {
+      float: left;
+      width: 20%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #intro3 .intro-content > .float .layout, #intro3 #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+
+#intro4 {
+  color: #fff;
+  background: url(../images/intro4.jpg) repeat; }
+  #intro4 h2, #intro4 > p {
+    margin: 0 auto;
+    text-align: center; }
+  #intro4 .intro-content, #intro4 #intro5 {
+    margin-left: -20px; }
+    #intro4 .intro-content > .float, #intro4 #intro5 > .float {
+      float: left;
+      width: 25%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      #intro4 .intro-content > .float .layout, #intro4 #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  #intro4 .intro-content h3, #intro4 #intro5 h3 {
+    text-align: center; }
+
+#intro5 {
+  background: url(../images/intro5.jpg) no-repeat; }
+
+#intro6 {
+  background-color: #fff; }
+
+#intro7 {
+  background: url(../images/intro7.jpg) no-repeat; }
+
+#intro8 {
+  background: url(../images/intro8.jpg) no-repeat; }
+
+#intro9 {
+  background-color: #fff; }
+
+footer {
+  background-color: #000;
+  color: #fff; }
+  footer .footer-nav ul {
+    margin-bottom: 20px;
+    height: 30px;
+    line-height: 30px;
+    background-clip: content-box;
+    border-bottom: 1px solid #4F4F4F; }
+  footer li {
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    border-left: 1px solid; }
+  footer .contact .intro-content, footer .contact #intro5 {
+    margin-left: -20px; }
+    footer .contact .intro-content > .float, footer .contact #intro5 > .float {
+      float: left;
+      width: 33.3%;
+      padding-left: 20px;
+      box-sizing: border-box; }
+      footer .contact .intro-content > .float .layout, footer .contact #intro5 > .float .layout {
+        margin: 0 auto;
+        overflow: hidden; }
+  footer .contact .contact-content {
+    margin-left: 150px;
+    width: 80%;
+    height: 80%; }
+  footer .contact > h3 {
+    float: left;
+    width: 150px;
+    height: 150px; }
+  .contact-content > div h5, .contact-content > div p {
+    display: inline-block; }
+
+/*aboutus*/
+.about-content .side {
+  float: left;
+  width: 20%;
+  height: 100%; }
+  .about-content .side ul li {
+    height: 50px;
+    border: 1px solid;
+    right: 20%;
+    background-clip: content-box;
+    line-height: 50px;
+    background: linear-gradient(to bottom, #0F0F0F, #000 50%, #0F0F0F);
+    border-bottom: 1px solid #444444; }
+    .about-content .side ul li a {
+      display: inline-block;
+      width: 100%;
+      text-align: center; }
+    .about-content .side ul li:hover {
+      background: #610101; }
+      .about-content .side ul li:hover span {
+        opacity: 1;
+        filter: alpha(opacity=100); }
+    .about-content .side ul li span {
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-top: 26px solid transparent;
+      border-left: 15px solid #610101;
+      border-bottom: 27px solid transparent;
+      opacity: 0;
+      filter: alpha(opacity=0); }
+.about-content .about-intro {
+  margin-left: 25%;
+  width: 60%; }
+
+/*# sourceMappingURL=main.css.map */

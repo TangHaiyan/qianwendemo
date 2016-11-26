@@ -1,0 +1,241 @@
+/*=nav*/
+@mixin navheight($height, $fontSize,$imgWidth) {
+  nav.top-nav {
+  	height:$height;
+	.logo {
+		height: $height;
+	    margin: ($height - $imgWidth) / 2 2em;
+	    // img{
+	    // 	padding: ($height - $imgWidth) / 2 0;
+	    // }
+	}
+    li {
+      height: $height*0.6;
+      line-height: $height*0.6;
+      margin-top: $height*0.2;
+      font-size: $fontSize;
+      // a {
+      //   display: inline-block;
+      //   text-align: center;
+      //   width: 100%;
+      //   font-size: 1rem;
+      //   color: $mainFont;
+      // }
+    }
+    .logo {
+      color: $secondFont;
+      width:50%;
+	  img{
+	    width:$imgWidth;
+	  }
+      >div {
+        // width:20%;
+        display: inline-block;
+        margin-left: 0.5em;
+        h1 {
+          font-size: $fontSize;
+        }
+        span {
+          &:nth-child(2) {
+            margin-left: 5px;
+            font-size: 0.7*$fontSize;
+          }
+        }
+        p {
+          font-size: 0.8*$fontSize;
+        }
+      }
+    }
+    .second-nav li a{
+        font-size:0.9*$fontSize;
+    }
+    @keyframes navchange {
+      0% {
+        height: $height*0.8;
+        line-height: $height*0.8;
+        margin-top: $height*0.1;
+      }
+      ;
+
+      100% {
+        height: $height*0.6;
+        line-height: $height*0.6;
+        margin-top: $height*0.2;
+      }
+      ;
+    }
+  }
+    .banner,.seat{
+       margin-top: $height+0.8em; 
+    }
+    .about-content{
+       margin-top: $height+0.8em;          
+    }
+}
+
+nav.top-nav {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
+
+	ul.frist-nav {
+		position: absolute;
+		//left: 60%;
+		right: 20%;
+	}
+	.frist-nav>li {
+		float: left;
+		width: 3em;
+		color: $mainFont;
+		a{
+	        display: inline-block;
+	        text-align: center;
+	        width: 100%;
+	        font-size: 1rem;
+	        color: $mainFont;
+        }
+		&:hover {
+			background-color: $fourthColor;
+			a {
+				color: #fff;
+			}
+			//@include animation(navchange 500ms ease);
+		}
+	}
+	.frist-nav .icon {
+		display: none;
+		position: relative;
+
+		span {
+			display: inline-block;
+			width: 20px;
+			height: 3px;
+			padding: 3px 0;
+			border-top: 3px solid $fourthColor;
+			border-bottom: 3px solid $fourthColor;
+			background-color: $fourthColor;
+			background-clip: content-box;
+			vertical-align: middle;
+		}
+		&:hover {
+			.second-nav {
+				// background-color: red;
+				display: block;
+				a {
+					color: $mainFont;
+				}
+			}
+		}
+	}
+	.active {
+		background-color: $fourthColor;
+
+		a {
+			color: #fff;
+		}
+	}
+	.logo {
+		float: left;
+	}
+	.second-nav {
+		display: none;
+		position: absolute;
+		background-color: #fff;
+		top: 2em;
+		//height: 110px;
+
+		li {
+			margin-top: 0px;
+			width: 4em;
+			height: 2em;
+			line-height: 2em;
+
+			a {
+				border-bottom: 1px solid $fourthColor;
+			}
+		}
+		li:first-child {
+			margin-top: 0;
+		}
+	}
+}
+
+@media screen and (min-width:768px) {
+	@include navheight(5em, 1.2rem,4em);
+}
+@media screen and (max-width:768px) and (min-width:600px) {
+	@include navheight(4em, 1rem,3em);
+}
+@media screen and (max-width:600px) and (min-width:320px) {
+	@include navheight(2.5em, 0.8rem,1.8em);
+}
+@media screen and (max-width:320px) {
+	@include navheight(2em, 0.6rem,1.8em);
+	.logo p{
+		// display:none;
+	}
+}
+//$blank-height: 10px;
+
+@media screen and (max-width:850px) {
+	nav.top-nav {
+		.frist-nav {
+			left: 80%;
+		}
+		.frist-nav > li {
+			display: none;
+		}
+		.frist-nav .icon {
+			display: block;
+			// text-align: right;
+		}
+	}
+}
+
+/*=footer*/
+footer {
+	background-color: #000;
+	color: #fff;
+
+	.footer-nav ul {
+		margin-bottom: 1.5em;
+		height: 2em;
+		line-height: 2em;
+		background-clip: content-box;
+		border-bottom: 1px solid #4F4F4F;
+	}
+	li {
+		display: inline-block;
+		width: 5em;
+		text-align: center;
+		border-left: 1px solid;
+	}
+	.contact {
+		@include layout(30%);
+
+		.contact-content {
+			margin-left: 8em;
+			width: 70em;
+			height: 8em;
+		}
+		>h3 {
+			float: left;
+			width: 10em;
+			height: 10em;
+			font-size:1rem;
+			text-align:center;
+		}
+		@at-root .contact-content > div {
+			h5, p {
+				display: inline-block;
+			}
+		}
+		.QRcord img{
+			width:6em;
+			height:6em;
+		}
+	}
+}

@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
     <!-- endbuild -->
     <style type="text/css">
 
@@ -29,12 +30,28 @@
     <![endif]-->
 
   <nav class="top-nav">
-    <div class="logo"></div>
-    <ul>
-      <li><a href="index.html">首页</a></li>
-      <li><a href="about.html">我们</a></li>
-      <li><a href="service.html">服务</a></li> 
-      <li><a href="case1.html">案例</a></li>
+    <div class="logo">
+       <img src="images/logo.png" alt="千问网络">
+      <div>
+        <h1><span>千问网络</span><span>www.qw1000.cn</span></h1>
+        <p>互联网+营销解决方案服务商</p>        
+      </div>
+
+    </div>
+    <ul class="frist-nav">
+      <li><a href="index.html">首页 </a></li>
+      <li><a href="about.html">我们 </a></li>
+      <li><a href="service.html">服务 </a></li> 
+      <li><a href="case1.html">案例 </a></li>
+      <li class="icon">
+         <span></span>
+         <ul class="second-nav">
+            <li><a href="index.html">首页 </a></li>
+            <li><a href="about.html">我们 </a></li>
+            <li><a href="service.html">服务 </a></li> 
+            <li><a href="case1.html">案例 </a></li>           
+         </ul>
+      </li>
     </ul>
   </nav>
   <!-- <div class="blank"></div> -->
@@ -52,7 +69,7 @@
       <div class="intro-content m-cursor clearfix">
         <div class="cursor float">
           <div class="layout">
-            <h3>不只是做开发</h3>
+            <h3><i class="icon iconfont icon-kaifa"></i> 不只是做开发</h3>
             <P>10年100亿平台运作经验</P>
             <p>最新前沿技术</p>
             <p>营销资源深度整合</p>
@@ -61,7 +78,7 @@
         </div>           
         <div class="cursor float">
           <div class=" layout">
-            <h3>海陆空立体策划开发</h3>
+            <h3><i class="icon iconfont icon-diannaoshouji"></i> 四位一体策划开发</h3>
             <P><a href="">PC端网站前后台开发</a></P>
             <p><a href="">手机网站开发</a></p>
             <p><a href="">微信公众号开发</a></p>
@@ -70,7 +87,7 @@
         </div>           
         <div class="cursor float">
           <div class=" layout">
-            <h3>移动互联网时代</h3>
+            <h3><i class="icon iconfont icon-yidongduan"></i> 移动互联网时代</h3>
               <P><a href="">H5游戏</a><br>
               <p><a href="">H5活动</a></p>
               <p><a href="">H5邀请函</a></p>
@@ -79,7 +96,7 @@
         </div>  
         <div class="cursor float">
           <div class=" layout">
-            <h3>引爆品牌</h3>
+            <h3><i class="icon iconfont icon-yingxiao"></i> 引爆品牌</h3>
               <P><a href="">网络媒体</a><br>
               <p><a href="">微博微信大号</a></p>
               <p><a href="">视频网站</a></p>
@@ -90,10 +107,9 @@
         </div>           
         <div class="cursor float">
           <div class=" layout">
-            <h3>合作客户放大招</h3>
-            <P>一年免费域名<br>
-            一年免费维护<br>
-            一年免费微信公众号认证<br>              
+            <h3><i class="icon iconfont icon-dailishangguanli"></i> 网易云课堂</h3>
+            <P>签约代理商
+            
             </P>
           </div>
         </div>   
@@ -103,7 +119,7 @@
     </div>
 
   </article>
-  <article class="content" style="margin-top:150px">
+  <article class="content">
     <section class="service">
       <h2>我们的服务<span>service</span></h2>
         <div class="service-content clearfix">
@@ -230,7 +246,7 @@
     </section>
     <section class="customers-appraise1">
      <h2>业界评价 <span>Evaluation</span></h2>
-       <div class="intro-content">
+       <div class="intro-content clearfix">
          <div class="float">
            <div class="layout">
              <img src="images/Tguoyuan.jpg">
@@ -252,7 +268,7 @@
              <p>千问网络是一家非常专业的互联网公司，balabala………………</p>
            </div>
          </div>
-         <div class="layout">
+         <div class="float">
            <div class="layout">
              <img src="images/Tguoyuan.jpg">
              <h3>T果园创始人</h3>
@@ -407,7 +423,7 @@
     </div>        
    </footer> 
   <div class="toolbar">
-    <a href="" class="toolbar-item toolbar-item-wechat">
+<!--     <a href="" class="toolbar-item toolbar-item-wechat">
       <span class="toolbar-btn"></span>
     </a>
     <a href="" class="toolbar-item toolbar-item-feedback">
@@ -415,7 +431,7 @@
     </a>
     <a href="" class="toolbar-item toolbar-item-app">
       <span class="toolbar-btn"></span>
-    </a>
+    </a> -->
     <a href="" id="backTop" class="toolbar-item toolbar-item-top">
       <span class="toolbar-btn"></span>
     </a>
@@ -428,8 +444,9 @@
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script src="scripts/main.js"></script>
+    
     <!-- <script type="text/javascript" src="scripts/switchPages.js"></script> -->
     <script src='scripts/util.js'></script>
     <script src='scripts/slider.js'></script>
@@ -520,6 +537,19 @@
         })
 
       })
+    </script>
+    <script type="text/javascript">
+
+     window.onresize = function(){
+        var screenWidth = window.innerWidth;
+        //console.log(screenWidth);
+        //var htmlFont = 
+         var html = document.getElementsByTagName("html")[0];
+         //console.log(html);
+         html.style.fontSize = screenWidth/1366 * 16 + 'px';  
+         //console.log(html.style.fontSize);    
+     }
+
     </script>
     <!-- endbuild -->
   </body>

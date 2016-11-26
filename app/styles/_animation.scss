@@ -1,0 +1,15 @@
+//annimation
+@keyframes moveleft{
+  0%{ @include transform-translate(-$layerWidth / 5,0);}
+  100%{ @include transform-translate($layerWidth / 5,0);}
+}
+
+@keyframes moveright{
+  0%{ @include transform-translate($layerWidth / 5,0);}
+  100%{ @include transform-translate(-$layerWidth / 5,0);}
+}
+
+@keyframes turnaround{
+  0%{@include transform-rotate(0deg);}
+  100%{@include transform-rotate(360deg);}
+}

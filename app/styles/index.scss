@@ -1,4 +1,6 @@
-@import "mixin";
-@import "animation";
+@import "reset"; /*重置样式*/
+@import "mixin";/*css3样式*/
+@import "variable";/*变量*/
+@import "nav";/*公共部分，导航和底部*/
 @import "main";
-@import "toolbar";
+@import "toolbar"; /*侧边栏组件*/

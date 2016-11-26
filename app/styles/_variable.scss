@@ -1,0 +1,62 @@
+/*$bgcolors main colors blue*/
+$navLarge: 100px;
+$mainColor: #032951;
+$secondColor: #11406C;
+$thirdColor: #019ED5;
+$fourthColor: #8AABCA;
+$fifthColor: #fff;   /*fontColor grey*/
+$mainFont: #000;
+$secondFont: #504F4F;
+$thirdFont: #888686;
+// $navmiddle: 80px;
+
+/*color*/
+@mixin layout($width) {
+  .intro-content {
+    margin-left: -20px;
+
+    >.float {
+      float: left;
+      width: $width;
+      padding-left: 20px;
+      box-sizing: border-box;
+
+      .layout {
+        margin: 0 auto;
+        // height: 161px;
+        // width: 235px;
+        // background: url(../images/intro1-icon.png) no-repeat;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+/*h2样式 service case customer*/
+.h2css{
+  h2{
+    // width:60%;
+    // height:50px;
+    // line-height:50px;
+    // text-align:center;
+    margin:1em auto 1em;
+    background-color:#fff;
+    // background: linear-gradient(to bottom, $mainColor,$secondColor 50%,$mainColor); 
+    // box-shadow:0 2px 2px 2px $thirdColor; 
+    color:$mainColor;
+    // border-radius:20px 20px 20px 20px; 
+   span{
+      margin-left:5px;
+      color:$fourthColor;
+      font-size:1rem;            
+   } 
+    //margin:70px auto 30px;
+    padding-left:10px;
+    height:3em;
+    // color:$secondFont;
+    font-size:1.2rem;
+    line-height:3em;
+    text-align:left;     
+  }
+
+}
