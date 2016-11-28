@@ -465,7 +465,7 @@ footer {
     float: left;
     top: 0;
     bottom: 0;
-    width: 9em;
+    width: 8 em;
     background: linear-gradient(to bottom, #032951, #8AABCA);
     margin-bottom: -1000px;
     padding-bottom: 1000px;
@@ -513,7 +513,7 @@ footer {
       background-size: 25em 20em; }
 
 /*服务的媒体查询*/
-@media screen and (max-width: 800px) and (min-width: 320px) {
+@media screen and (max-width: 650px) and (min-width: 320px) {
   .service .service-intro {
     margin-left: 0; }
     .service .service-intro .intro-content {
